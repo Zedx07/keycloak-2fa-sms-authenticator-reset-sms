@@ -1,6 +1,23 @@
-.idea
+# Build artifacts
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE files
+.idea/
+.vscode/
 *.iml
-config
-target
-deploy.sh
-dependency-reduced-pom.xml
+.project
+.classpath
+.settings/
+
+# Secrets and sensitive files
+src/bin/
+*.properties
+!src/main/resources/theme-resources/messages/*.properties
+
+# OS files
+.DS_Store
+Thumbs.db
